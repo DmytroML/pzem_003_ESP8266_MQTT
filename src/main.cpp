@@ -217,7 +217,7 @@ void loop() {
         doc["voltage"] = registers[0]/100.0 ;
         doc["current"] = registers[1]/100.0 ;
         doc["power"] = (((uint16_t)registers[3] << 16) + (uint16_t)registers[2])/10.0;
-        doc["energy"] = (((uint16_t)registers[5] << 16) + (uint16_t)registers[4])/10.0;
+        doc["energy"] = (((uint16_t)registers[5] << 16) + (uint16_t)registers[4]);
 
         serializeJson(doc, buffer);
         client.publish(state_topic, buffer);

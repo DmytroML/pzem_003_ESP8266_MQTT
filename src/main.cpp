@@ -7,9 +7,9 @@
 
 // Update these with values suitable for your network.
 
-const char* ssid = "MikroTik-37B8A2";
-const char* password = "demoen24";
-const char* mqtt_server = "192.168.88.4";
+const char* ssid = "Mikrotic";
+const char* password = "pass";
+const char* mqtt_server = "192.168.88.1";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
